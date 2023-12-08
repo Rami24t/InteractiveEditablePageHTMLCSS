@@ -1,18 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editable CSS in HTML page</title>
 </head>
+<style>
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    blockquote,
+    q {
+        quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    style {
+        display: block;
+        font-size: large;
+        padding: 8px;
+        border: 1px solid black;
+        font-family: 'TypeWriter', monospace;
+    }
+</style>
+
 <body>
+    <style style="font-size: small; padding: 2px;" contenteditable="true">
+        style {
+            background-color: lightblue;
+            color: black;
+        }
+        </style>
     <style style='display: block;' contenteditable="true">
-        h1 {
-            background-color: yellow;
+        html {
+            background-color: blue;
+            font-size: 1.7rem;
         }
     </style>
-    <h1
-    style="display: block;"
-    >Editable CSS in HTML page</h1>
+    <style style='display: block;' contenteditable="true">
+        body {
+            background-color: white;
+            min-height: 200vh;
+        }
+    </style>
+    <style style='display: block;' contenteditable="true">
+        h1 {
+            background-color: snow;
+            font-family: 'Lucida Sans', sans-serif;
+            font-size: xxx-large;
+            text-align: center;
+            color: green;
+            margin: 32px auto;
+            padding: 11px 0;
+            user-select: none;
+        }
+    </style>
+    <style style='display: block;' contenteditable="true">
+        h1::after {
+            content: '(header CSS)';
+        }
+    </style>
+    <style style='display: block;' contenteditable="true">
+        p {
+            background-color: black;
+            color: white;
+            font-size: larger;
+            padding: 18px;
+            user-select: none;
+        }
+    </style>
+    <style style='display: block;' contenteditable="true">
+        header {
+            background-color: red;
+            padding: 9px 0;
+        }
+    </style>
+    <style style='display: block;' contenteditable="true">
+        main {
+            background-color: yellowgreen;
+            height: 12px;
+        }
+    </style>
+    <style style='display: block;' contenteditable="true">
+        footer {
+            background-color: brown;
+            padding: 18px;
+            user-select: none;
+        }
+        </style>
+    <style style='display: block;' contenteditable="true">
+        footer p::after {
+            color: gold;
+            content: 'footer p::after - Rami 2023';
+        }
+    </style>
+    <header>
+    <h1>Live editable styles</h1></header>
+    <main></main>
+    <p>Change the styles in the style tags above and see the changes unfold here live.</p>
+    <footer>
+        <p></p>
+    </footer>
 </body>
+
 </html>
