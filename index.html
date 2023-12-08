@@ -153,36 +153,48 @@
             color: white;
         }
     </style>
-    <style style='display: block;' contenteditable="true">
+    <style contenteditable="true">
         html {
             background-color: blue;
             font-size: 1.7rem;
         }
     </style>
-    <style style='display: block;' contenteditable="true">
+    <style contenteditable="true">
         body {
             background-color: white;
             min-height: 200vh;
         }
     </style>
-    <style style='display: block;' contenteditable="true">
+    <style contenteditable="true">
+        header {
+            background-color: gold;
+            padding: 9px 0;
+        }
+    </style>
+    <style contenteditable="true">
         h1 {
             background-color: lightyellow;
-            font-family: 'Lucida Sans', sans-serif;
+            color: green;
             font-size: xxx-large;
             text-align: center;
-            color: green;
+            font-family: 'Lucida Sans', sans-serif;
             margin: 32px auto;
             padding: 11px 0;
             user-select: none;
         }
     </style>
-    <style style='display: block;' contenteditable="true">
+    <style contenteditable="true">
         h1::after {
             content: '(header CSS)';
         }
     </style>
-    <style style='display: block;' contenteditable="true">
+    <style contenteditable="true">
+        main {
+            background-color: yellowgreen;
+            padding: 8px 12px 4px 8px;
+        }
+    </style>
+    <style contenteditable="true">
         p {
             background-color: black;
             color: magenta;
@@ -191,36 +203,27 @@
             user-select: none;
         }
     </style>
-    <style style='display: block;' contenteditable="true">
-        header {
-            background-color: gold;
-            padding: 9px 0;
-        }
-    </style>
-    <style style='display: block;' contenteditable="true">
-        main {
-            background-color: yellowgreen;
-            height: 12px;
-        }
-    </style>
-    <style style='display: block;' contenteditable="true">
+    <style contenteditable="true">
         footer {
             background-color: darkslategray;
+            text-align: center;
             padding: 18px;
-            user-select: none;
         }
     </style>
-    <style style='display: block;' contenteditable="true">
+    <style contenteditable="true">
         footer p::after {
             color: yellow;
+            font-size: medium;
+            background-color: transparent;
             content: 'footer p::after - Rami 2023';
         }
     </style>
     <header>
         <h1>Live editable styles</h1>
     </header>
-    <main></main>
-    <p>Change the styles in the style tags above and see the changes unfold here live.</p>
+    <main>
+        <p>Change the styles in the style tags above and see the changes unfold here live.</p>
+    </main>
     <footer>
         <p></p>
     </footer>
