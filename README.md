@@ -1,5 +1,5 @@
 ﻿# Interactive Editable CSS Styling Page
- Change the css in the style tags above and see the changes unfold live.
+ Edit the css tags on the top of the page and watch the results unfold live.
 
 ## Live Demo
 [link](https://rami24t.github.io/InteractiveEditablePageHTMLCSS/)
