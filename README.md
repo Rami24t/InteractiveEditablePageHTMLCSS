@@ -1,4 +1,7 @@
-﻿# InteractiveEditablePageHTMLCSS
+﻿# Interactive Editable CSS Styling Page
+
+## Live Demo
+
 
 ## Snapshot
 
